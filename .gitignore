@@ -1,0 +1,21 @@
+# Node
+node_modules/
+project/node_modules/
+project/dist/
+project/.vite/
+project/coverage/
+project/.eslintcache
+
+# Tauri/Rust
+project/src-tauri/target/
+project/src-tauri/.cargo/
+
+# Python venvs
+.venv/
+ai_core/.venv/
+
+# OS / misc
+.DS_Store
+Thumbs.db
+*.log
+
