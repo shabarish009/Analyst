@@ -70,8 +70,12 @@ export const SQLAnalyst: React.FC = () => {
       }
       const out = await executeQuery(text)
       useShellStore.getState().appendAudit({ ts: Date.now(), actor: user.id, action: 'sql/run', ok: true })
-      if (out.cols && out.rows) setResults({ cols: out.cols, rows: out.rows })
-      else setResults(null)
+      if (out.cols && out.rows) {
+        const res = { cols: out.cols as string[], rows: out.rows as any[] }
+        setResults(res)
+        // publish results as a session data source for cross-tool symbiosis (e.g., dashboards)
+        useShellStore.getState().publishSession('sql_result', res as any)
+      } else setResults(null)
     } catch (e: unknown) {
       const msg = e instanceof Error ? e.message : String(e)
       setError(msg)
