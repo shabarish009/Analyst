@@ -9,3 +9,11 @@ export async function generateSQL(prompt: string, schema?: unknown): Promise<str
   return invoke<string>('generate_sql', { prompt, schema: schemaStr })
 }
 
+export async function analyzeData(payload: { name: string; cols: string[]; sample: any[][] }): Promise<string> {
+  return invoke<string>('analyze_data', { payload: JSON.stringify(payload) })
+}
+
+export async function generateDashboardInsights(payload: { widgets: any[]; sources: Record<string, any> }): Promise<string> {
+  return invoke<string>('generate_dashboard_insights', { payload: JSON.stringify(payload) })
+}
+

@@ -14,3 +14,12 @@ export async function getSchema(): Promise<Record<string, string[]>> {
   return JSON.parse(raw)
 }
 
+export async function readDataset(path: string): Promise<{ cols: string[]; rows: any[][] }>{
+  const raw = await invoke<string>('read_dataset', { path })
+  return JSON.parse(raw)
+}
+
+export async function registerSessionTable(name: string, cols: string[], rows: any[][]): Promise<void> {
+  await invoke('register_session_table', { name, cols, rows })
+}
+

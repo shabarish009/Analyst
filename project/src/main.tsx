@@ -5,14 +5,22 @@ import { Window } from './ui/Window'
 import { Taskbar } from './taskbar/Taskbar'
 import { SQLAnalyst } from './sql/SQLAnalyst'
 import { ConnectionManager } from './sql/ConnectionManager'
+import { ExcelAnalyst } from './excel/ExcelAnalyst'
+import { DashboardCreator } from './dashboard/DashboardCreator'
+import { HypothesisTester } from './hypothesis/HypothesisTester'
+import { Whiteboard } from './whiteboard/Whiteboard'
 
 const App = () => (
   <>
     <div className="center">
-      <Window id="win-main" title="Shelby SQL Analyst">
+      <Window id="win-main" title="Shelby Workbench">
         <div style={{ padding: 12, display: 'grid', gap: 12 }}>
           <ConnectionManager />
+          <ExcelAnalyst />
           <SQLAnalyst />
+          <DashboardCreator />
+          <HypothesisTester />
+          <Whiteboard roomId="demo" />
         </div>
       </Window>
     </div>

@@ -17,6 +17,7 @@
   "type": "commonjs",
   "dependencies": {
     "@codemirror/lang-sql": "^6.9.1",
+    "@tauri-apps/plugin-dialog": "^2.3.2",
     "@uiw/react-codemirror": "^4.24.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
