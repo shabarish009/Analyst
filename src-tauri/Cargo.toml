@@ -1,10 +1,10 @@
 [package]
-name = "app"
-version = "0.1.0"
-description = "A Tauri App"
-authors = ["you"]
-license = ""
-repository = ""
+name = "symbiotic-analysis-environment"
+version = "1.0.0"
+description = "Symbiotic Analysis Environment - A revolutionary data analysis platform"
+authors = ["shabarish009"]
+license = "MIT"
+repository = "https://github.com/shabarish009/Analyst"
 edition = "2021"
 rust-version = "1.77.2"
 

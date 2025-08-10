@@ -1,8 +1,16 @@
 {
-  "name": "project",
+  "name": "symbiotic-analysis-environment",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A revolutionary data analysis platform that seamlessly bridges Excel, SQL, AI, and interactive dashboards in one unified workspace.",
+  "main": "src/main.tsx",
+  "homepage": "https://github.com/shabarish009/Analyst",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shabarish009/Analyst.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shabarish009/Analyst/issues"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -11,10 +19,10 @@
     "format": "prettier --write .",
     "test": "vitest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "keywords": ["data-analysis", "sql", "excel", "dashboard", "ai", "tauri", "react", "typescript"],
+  "author": "shabarish009",
+  "license": "MIT",
+  "type": "module",
   "dependencies": {
     "@codemirror/lang-sql": "^6.9.1",
     "@tauri-apps/plugin-dialog": "^2.3.2",
