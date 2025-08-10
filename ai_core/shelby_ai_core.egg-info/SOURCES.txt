@@ -1,0 +1,8 @@
+pyproject.toml
+core/__init__.py
+core/hypothesis_deconstructor.py
+shelby_ai_core.egg-info/PKG-INFO
+shelby_ai_core.egg-info/SOURCES.txt
+shelby_ai_core.egg-info/dependency_links.txt
+shelby_ai_core.egg-info/requires.txt
+shelby_ai_core.egg-info/top_level.txt

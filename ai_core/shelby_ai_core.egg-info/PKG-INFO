@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: shelby_ai_core
+Version: 0.1.0
+Summary: The sovereign AI core for the Symbiotic Analysis Environment.
+Requires-Python: >=3.10
+Requires-Dist: fastapi
+Requires-Dist: uvicorn[standard]
+Requires-Dist: pydantic
+Requires-Dist: python-dotenv
+Requires-Dist: pytest
+Requires-Dist: pytest-asyncio
+Requires-Dist: httpx
+Requires-Dist: tinydb

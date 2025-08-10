@@ -1,0 +1,21 @@
+/* Minimal Windows XP-esque look */
+:root {
+  --xp-blue: #3a6ea5;
+  --xp-light: #ece9d8;
+  --xp-title: linear-gradient(180deg, #1993ff 0%, #106db3 100%);
+}
+html, body, #root { height: 100%; margin: 0; }
+body { background: var(--xp-light); font-family: Tahoma, Segoe UI, sans-serif; }
+
+.app-window {
+  width: 640px; height: 400px; background: #fff; border: 2px solid #003c74;
+  box-shadow: 0 0 0 1px #8baed6 inset; display: flex; flex-direction: column;
+}
+.titlebar {
+  background: var(--xp-title); color: #fff; padding: 6px 10px; font-weight: bold;
+  border-bottom: 1px solid #0b4c83;
+}
+.content { flex: 1; background: #fff; }
+
+.center { min-height: 100%; display: grid; place-items: center; }
+
